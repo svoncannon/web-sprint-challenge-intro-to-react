@@ -30,11 +30,18 @@ Be prepared to demonstrate your understanding of this week's concepts by answeri
 
 1. What is React JS and what problems does it solve? Support your answer with concepts introduced in class and from your personal research on the web.
 
-1. Describe component state.
+ React JS is a javascript library that allows us to create class-based and functional components that render reusable elements to the DOM. Whereas before, we would have to use vanilla JS to select a particular element and append components to it, we can use React to create a virtual DOM and let react decide and do all the work of rendering a particular component to the DOM. We as developers can now focus on what the page should look like rather than how we will add it. It also allows for conditional rendering, so that only particular elements that we want will be rendered.
 
-1. Describe props.
+2. Describe component state.
 
-1. What are side effects, and how do you sync effects in a React component to changes of certain state or props?
+A component state is data that the component holds that will be subject to change. The state is what React uses to determine if data on an element has changed and needs re-rendering. State allows components to tell React if their data has changed and needs to be updated on the DOM.
+
+3. Describe props.
+
+Props are shorthand for properties and are pieces of information that a parent element in React can pass to children components. This information can be any JS value, and can be either derived from state or from other data points.
+
+4. What are side effects, and how do you sync effects in a React component to changes of certain state or props?
+ A side effect happens when a function does something other than the return value - such as setting an interval. In React, we have useEffect, which is the equivalent to componentDidMount and componentDidUpdate, which run whenever the component loads/updates. We can sync state and props to useEffect by passing an array as the second argument, with the props and/or state names as the items inside the array. It will run the method every time ANY of those items change.
 
 You are expected to be able to answer questions in these areas. Your responses contribute to your Sprint Challenge grade.
 
